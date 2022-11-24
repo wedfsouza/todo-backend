@@ -7,3 +7,10 @@ services:
     environment:
       SA_PASSWORD: "Todo_@12345"
       ACCEPT_EULA: "Y"
+  sqlserver_tests:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    ports:
+      - "8002:1433"
+    environment:
+      SA_PASSWORD: "Todo_@12345"
+      ACCEPT_EULA: "Y"
